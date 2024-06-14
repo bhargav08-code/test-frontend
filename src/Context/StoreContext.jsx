@@ -4,7 +4,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "http://localhost:4000" || process.env.REACT_APP_SERVER_URL;
+  const url = "https://test-backend-xgpk.onrender.com" || process.env.REACT_APP_SERVER_URL;
   const [token, setToken] = useState("");
   const [food_list, setFoodList] = useState([]);
   const addToCart = async (itemId) => {
